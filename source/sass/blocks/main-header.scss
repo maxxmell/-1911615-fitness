@@ -1,6 +1,47 @@
 .main-header {
   color: $color-default-white;
   background: $desktop-conic;
-  min-height: 658px;
   min-width: 320px;
+}
+
+.main-header__container {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 30px;
+  min-height: 658px;
+
+  @include vp-1199 {
+    position: static;
+  }
+}
+
+.main-header__menu-wrapper {
+  position: absolute;
+  width: 1160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+
+  @include vp-1199 {
+    position: static;
+    width: auto;
+  }
+}
+
+.main-header__contacts-link {
+  grid-column: 2;
+  justify-self: flex-end;
+  width: 170px;
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: right;
+  color: $color-default-white;
+}
+
+.main-header__intro {
+  padding-top: 21px;
 }

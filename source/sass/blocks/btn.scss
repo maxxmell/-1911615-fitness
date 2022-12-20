@@ -1,18 +1,14 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 22px 31px;
 
   color: $color-default-white;
 
-  background-color: blue;
-  border: none;
+  background-color: transparent;
+  border: 4px solid $color-default-white;
   cursor: pointer;
 
   transition: opacity $trans-default;
-
-  &--red {
-    background-color: red;
-  }
 
   &:disabled {
     opacity: 0.5;

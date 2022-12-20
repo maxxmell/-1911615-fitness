@@ -1,0 +1,69 @@
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  column-gap: 64px;
+  padding-right: 200px;
+}
+
+.intro__text-wrapper {
+  padding-top: 120px;
+  display: grid;
+  align-items: flex-end;
+  align-content: flex-start;
+  grid-template-columns: 133px 247px;
+  gap: 17px;
+}
+
+.intro__city {
+  margin: 0;
+  padding-right: 50px;
+  grid-column: span 2;
+  justify-self: flex-end;
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-default-white;
+}
+
+.intro__link-button {
+  grid-column: span 2;
+  justify-self: flex-end;
+}
+
+.intro h1,
+.intro__main-header {
+  margin: 0;
+  width: 247px;
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 110px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  -webkit-text-stroke: 2px $color-default-white;
+}
+
+.intro__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 14px;
+}
+
+.intro__list-item {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: end;
+}
