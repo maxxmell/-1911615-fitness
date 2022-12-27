@@ -1,4 +1,4 @@
-import Swiper from '../../vendor/swiper';
+import {Swiper} from '../../vendor/swiper';
 
 export function initSlider(target) {
   let swiperSlider = new Swiper(target, {
