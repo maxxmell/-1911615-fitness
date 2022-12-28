@@ -182,9 +182,9 @@
         <section class="main-container__coaches coaches">
           <div class="coaches__container container">
             <h2 class="coaches__main-header">Тренеры</h2>
-            <div class="coaches__slider-container coachesSwiper">
+            <div class="coaches__slider-container coaches-swiper">
               <ul class="coaches__list swiper-wrapper">
-                <li class="coaches__item coach">
+                <li class="coaches__item coach swiper-slide">
                   <div class="coach__photo-wrapper">
                     <picture>
                       <source srcset="img/content/coaches/coach-pavlova.webp 1x, img/content/coaches/coach-pavlova@2x.webp 2x" type="image/webp">
@@ -201,7 +201,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="coaches__item coach">
+                <li class="coaches__item coach swiper-slide">
                   <div class="coach__photo-wrapper">
                     <picture>
                       <source srcset="img/content/coaches/coach-lavrov.webp 1x, img/content/coaches/coach-lavrov@2x.webp 2x" type="image/webp">
@@ -218,7 +218,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="coaches__item coach">
+                <li class="coaches__item coach swiper-slide">
                   <div class="coach__photo-wrapper">
                     <picture>
                       <source srcset="img/content/coaches/coach-pashkov.webp 1x, img/content/coaches/coach-pashkov@2x.webp 2x" type="image/webp">
@@ -235,7 +235,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="coaches__item coach">
+                <li class="coaches__item coach swiper-slide">
                   <div class="coach__photo-wrapper">
                     <picture>
                       <source srcset="img/content/coaches/coach-ketova.webp 1x, img/content/coaches/coach-ketova@2x.webp 2x" type="image/webp">
@@ -252,7 +252,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="coaches__item coach">
+                <li class="coaches__item coach swiper-slide">
                   <div class="coach__photo-wrapper">
                     <picture>
                       <source srcset="img/content/coaches/coach-pavlova.webp 1x, img/content/coaches/coach-pavlova@2x.webp 2x" type="image/webp">
@@ -269,7 +269,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="coaches__item coach">
+                <li class="coaches__item coach swiper-slide">
                   <div class="coach__photo-wrapper">
                     <picture>
                       <source srcset="img/content/coaches/coach-lavrov.webp 1x, img/content/coaches/coach-lavrov@2x.webp 2x" type="image/webp">
@@ -286,7 +286,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="coaches__item coach">
+                <li class="coaches__item coach swiper-slide">
                   <div class="coach__photo-wrapper">
                     <picture>
                       <source srcset="img/content/coaches/coach-pashkov.webp 1x, img/content/coaches/coach-pashkov@2x.webp 2x" type="image/webp">
@@ -303,7 +303,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="coaches__item coach">
+                <li class="coaches__item coach swiper-slide">
                   <div class="coach__photo-wrapper">
                     <picture>
                       <source srcset="img/content/coaches/coach-ketova.webp 1x, img/content/coaches/coach-ketova@2x.webp 2x" type="image/webp">
@@ -321,8 +321,8 @@
                   </div>
                 </li>
               </ul>
-              <div class="coaches__slider-button coachesSwiper-button-next"></div>
-              <div class="coaches__slider-button coachesSwiper-button-prev"></div>
+              <div class="coaches__slider-button coaches-swiper-button-next"></div>
+              <div class="coaches__slider-button coaches-swiper-button-prev"></div>
             </div>
           </div>
         </section>
@@ -419,9 +419,9 @@
         <section class="main-container__feedback feedback">
           <div class="feedback__container container">
             <h2 class="feedback__main-header">Отзывы</h2>
-            <div class="feedback__slider-container feedbackSwiper">
-              <ul class="feedback__list">
-                <li class="feedback__item">
+            <div class="feedback__slider-container feedback-swiper">
+              <ul class="feedback__list swiper-wrapper">
+                <li class="feedback__item swiper-slide">
                   <div class="feedback__photo-wrapper">
                     <picture>
                       <source srcset="img/content/feedback/feedback-orlova.webp 1x, img/content/feedback/feedback-orlova@2x.webp 2x" type="image/webp">
@@ -431,7 +431,7 @@
                   <h3 class="feedback__author">Анна Орлова</h3>
                   <p class="feedback__content">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </li>
-                <li class="feedback__item">
+                <li class="feedback__item swiper-slide">
                   <div class="feedback__photo-wrapper">
                     <picture>
                       <source srcset="img/content/feedback/feedback-orlova.webp 1x, img/content/feedback/feedback-orlova@2x.webp 2x" type="image/webp">
@@ -442,6 +442,8 @@
                   <p class="feedback__content">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </li>
               </ul>
+              <div class="feedback__slider-button feedback-swiper-button-next swiper-button-next"></div>
+              <div class="feedback__slider-button feedback-swiper-button-prev swiper-button-prev"></div>
             </div>
           </div>
         </section>
@@ -504,6 +506,48 @@
       </main>
       <footer class="main-footer">
         <div class="main-footer__container container">
+          <a class="main-footer__logo-link">
+            <picture>
+              <img src="img/svg/main-logo-desktop.svg" width="122" height="23"  alt="Логотип SUPERGYM">
+            </picture>
+          </a>
+          <ul class="main-footer__navigation footer-navigation">
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">Услуги</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">Абонементы</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">Акции</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">Тренеры</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">Расписание</a>
+            </li>
+          </ul>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.ru/htmlacademy">
+                  <span class="visually-hidden">Вконтакте.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--ok" href="https://ok.ru/htmlacademy">
+                  <span class="visually-hidden">Одноклассники.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--reddit" href="https://www.reddit.com/htmlacademy">
+                  <span class="visually-hidden">Reddit.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
 
