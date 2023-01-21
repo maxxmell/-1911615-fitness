@@ -1,0 +1,89 @@
+.subscription-card {
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 360/448;
+  padding: 68px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 7px solid transparent;
+  background-color: $color-default-white;
+
+  @include hover-focus {
+    border-image-source: $border-linear;
+    border-image-slice: 1;
+  }
+}
+
+.subscription__order-link {
+  width: 206px;
+}
+
+.subscription-card h4,
+.subscription-card__header {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+  color: $sapphire;
+  text-transform: capitalize;
+}
+
+.subscription-card__property {
+  margin: 0;
+  padding-bottom: 5px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: $chambray;
+}
+
+.subscription-card__price-container {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 59px;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.subscription-card__price {
+  margin: 0;
+  background-image: url("../img/svg/rouble.svg");
+  padding-right: 44px;
+  background-position: bottom 24px right 0;
+  background-size: 30px 42px;
+  background-repeat: no-repeat;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: $egyptian-blue;
+  word-break: break-word;
+}
+
+.subscription-card__rouble-img {
+  display: block;
+  float: right;
+}
+
+.subscription-card__price-shadow {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 85px;
+  color: $whisper;
+  opacity: 0.48;
+  text-align: center;
+
+  word-break: break-word;
+}

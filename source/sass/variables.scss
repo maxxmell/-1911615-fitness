@@ -5,7 +5,6 @@
 
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -33,7 +32,7 @@ $video-linear:                      linear-gradient(44.89deg, #003d85 25.38%, #b
 $border-linear:                     linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
 $text-linear-1:                     linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
 $text-linear-2:                     linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
-
+$button-linear:                     linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 
 // Typography
 // ---------------------------------
