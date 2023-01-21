@@ -1,0 +1,41 @@
+.coaches__container {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 91px;
+}
+
+.coaches__container h2,
+.coaches__main-header {
+  padding-right: 2px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  color: $sapphire;
+}
+
+.coaches__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.coaches__slider-button {
+  position: absolute;
+  z-index: 1;
+  top: 250px;
+  height: 32px;
+  width: 16px;
+  background-image: url("../img/svg/icon-slider-tick-left.svg");
+  background-size: cover;
+}
+
+.coaches__slider-button--prev {
+  left: 40px;
+}
+
+.coaches__slider-button--next {
+  rotate: 180deg;
+  right: 40px;
+}
+

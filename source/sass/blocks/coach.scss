@@ -1,0 +1,85 @@
+.coach {
+  tabindex:0;
+  position: relative;
+  width: 260px;
+  height: 294px;
+  aspect-ratio: 260/294;
+}
+
+.coach__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 58px 20px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  color: $color-default-white;
+  text-align: center;
+  justify-content: flex-end;
+
+  @include hover {
+    background-color: rgba(16, 38, 84, 0.89);
+    justify-content: flex-start;
+  }
+}
+
+.coach__text-wrapper:hover:not(.focus-visible) .coach__text-wrapper p,
+.coach__text-wrapper:hover:not(.focus-visible) .coach__type,
+.coach__text-wrapper:hover:not(.focus-visible) .coach__skills-list {
+  display: block;
+}
+
+.coach__text-wrapper h3,
+.coach__name-header {
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.coach__text-wrapper p,
+.coach__type {
+  display: none;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $spindle;
+}
+
+.coach__skills-list {
+  padding: 0;
+  padding-left: 35px;
+  display: none;
+  list-style: none;
+}
+
+.coach__skills-item {
+  position: relative;
+  padding: 0;
+  padding-left: 16px;
+  text-align: start;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: $color-default-white;
+  }
+}
+
+.coach__skills-item + .coach__skills-item {
+  margin-top: 20px;
+}

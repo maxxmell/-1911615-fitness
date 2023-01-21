@@ -35,12 +35,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 20px;
-  min-width: 20px;
+  min-height: 25px;
+  min-width: 25px;
   background-position: center;
   background-repeat: no-repeat;
   background-color: white;
-  background-size: contain;
+  border-radius: 50%;
 
   @include vp-1023 {
     min-height: 16px;
