@@ -1,0 +1,108 @@
+.promo__container {
+  padding-top: 149px;
+  padding-bottom: 17px;
+}
+
+.promo__container h2,
+.promo__main-header {
+  margin: 0;
+  padding-bottom: 34px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.promo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.promo__item {
+  box-sizing: border-box;
+  min-height: 211px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $resolution-blue;
+  border: 7px solid transparent;
+  border-image-source: $border-linear;
+  border-image-slice: 1;
+}
+
+.promo__item h3,
+.promo__item-header {
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.promo__item p,
+.promo__item-description {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.promo__link {
+  margin-top: auto;
+  align-self: start;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: $resolution-blue;
+
+  border-bottom: 1px solid $resolution-blue;
+
+  &--white {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+    border-bottom: 1px solid $color-default-white;
+  }
+}
+
+.promo__item--special {
+  padding: 0;
+  grid-row: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: none;
+  background-color: $torch-red;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.promo__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+  background-color: $torch-red;
+  color: $color-default-white;
+}
+
+.promo__item--special h3,
+.promo__item--special .promo__item-header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 35px;
+}
+
+.promo__item--special span,
+.promo__item-header-detail {
+  padding-top: 10px;
+  font-size: 70px;
+  line-height: 70px;
+}
