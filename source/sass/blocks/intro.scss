@@ -1,12 +1,12 @@
 .intro {
   display: grid;
   grid-template-columns: 1fr 500px;
-  column-gap: 64px;
+  column-gap: 63px;
   padding-right: 200px;
 }
 
 .intro__text-wrapper {
-  padding-top: 120px;
+  padding-top: 115px;
   display: grid;
   align-items: flex-end;
   align-content: flex-start;
@@ -16,22 +16,25 @@
 
 .intro__city {
   margin: 0;
-  padding-right: 50px;
+  padding-right: 52px;
+  padding-bottom: 2px;
   grid-column: span 2;
   justify-self: flex-end;
 
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 48px;
-  line-height: 58px;
+  line-height: 50px;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: $color-default-white;
 }
 
 .intro__link-button {
+  margin-top: 31px;
+  width: 234px;
+  padding: 20px 31px 19px 30px;
   grid-column: span 2;
   justify-self: flex-end;
 }
@@ -39,6 +42,7 @@
 .intro h1,
 .intro__main-header {
   margin: 0;
+  padding-right: 1px;
   width: 247px;
 
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -56,8 +60,7 @@
 .intro__list {
   list-style: none;
   margin: 0;
-  padding: 0;
-  padding-bottom: 14px;
+  padding: 0 1px 36px;
 }
 
 .intro__list-item {
