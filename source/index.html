@@ -441,31 +441,36 @@
         <section class="main-container__feedback feedback">
           <div class="feedback__container container">
             <h2 class="feedback__main-header">Отзывы</h2>
-            <div class="feedback__slider-container feedback-swiper swiper">
-              <ul class="feedback__list swiper-wrapper">
-                <li class="feedback__item swiper-slide">
-                  <div class="feedback__photo-wrapper">
-                    <picture>
-                      <source srcset="img/content/feedback/feedback-orlova.webp 1x, img/content/feedback/feedback-orlova@2x.webp 2x" type="image/webp">
-                      <img src="img/content/feedback/feedback-orlova.jpg" srcset="img/content/feedback/feedback-orlova.jpg 1x, img/content/feedback/feedback-orlova@2x.jpg 2x" width="80" height="80"  alt="Анна Орлова">
-                    </picture>
-                  </div>
-                  <h3 class="feedback__author">Анна Орлова</h3>
-                  <p class="feedback__content">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
-                </li>
-                <li class="feedback__item swiper-slide">
-                  <div class="feedback__photo-wrapper">
-                    <picture>
-                      <source srcset="img/content/feedback/feedback-orlova.webp 1x, img/content/feedback/feedback-orlova@2x.webp 2x" type="image/webp">
-                      <img src="img/content/feedback/feedback-orlova.jpg" srcset="img/content/feedback/feedback-orlova.jpg 1x, img/content/feedback/feedback-orlova@2x.jpg 2x" width="80" height="80"  alt="Анна Орлова">
-                    </picture>
-                  </div>
-                  <h3 class="feedback__author">Анна Орлова</h3>
-                  <p class="feedback__content">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
-                </li>
-              </ul>
-              <div class="feedback__slider-button feedback-swiper-button-next swiper-button-next"></div>
-              <div class="feedback__slider-button feedback-swiper-button-prev swiper-button-prev"></div>
+            <div class="feedback__slider-wrapper">
+              <div class="feedback__slider-container feedback-swiper swiper">
+                <ul class="feedback__list swiper-wrapper">
+                  <li class="feedback__item swiper-slide">
+                    <div class="feedback__photo-wrapper">
+                      <picture>
+                        <source srcset="img/content/feedback/feedback-orlova.webp 1x, img/content/feedback/feedback-orlova@2x.webp 2x" type="image/webp">
+                        <img src="img/content/feedback/feedback-orlova.jpg" srcset="img/content/feedback/feedback-orlova.jpg 1x, img/content/feedback/feedback-orlova@2x.jpg 2x" width="80" height="80"  alt="Анна Орлова">
+                      </picture>
+                    </div>
+                    <div class="feedback__text-wrapper">
+                      <h3 class="feedback__author">Анна Орлова</h3>
+                      <p class="feedback__content">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                    </div>
+                    </li>
+                  <li class="feedback__item swiper-slide">
+                    <div class="feedback__photo-wrapper">
+                      <picture>
+                        <source srcset="img/content/feedback/feedback-orlova.webp 1x, img/content/feedback/feedback-orlova@2x.webp 2x" type="image/webp">
+                        <img src="img/content/feedback/feedback-orlova.jpg" srcset="img/content/feedback/feedback-orlova.jpg 1x, img/content/feedback/feedback-orlova@2x.jpg 2x" width="80" height="80"  alt="Анна Орлова">
+                      </picture>
+                    </div>
+                    <div class="feedback__text-wrapper">
+                      <h3 class="feedback__author">Анна Орлова</h3>
+                      <p class="feedback__content">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                    </div>
+                </ul>
+              </div>
+              <div class="feedback__slider-button feedback__slider-button--next feedback-swiper-button-next"></div>
+              <div class="feedback__slider-button feedback__slider-button--prev feedback-swiper-button-prev"></div>
             </div>
           </div>
         </section>
@@ -485,7 +490,7 @@
                   minlength="1"
                   placeholder="Телефон" required>
                 <label for="booking-tel">Телефон</label>
-                <button class="btn" type="submit">Оставить заявку</button>
+                <button class="btn" type="submit">Отправить</button>
               </form>
             </div>
             <div class="contact-us__contacts contacts">

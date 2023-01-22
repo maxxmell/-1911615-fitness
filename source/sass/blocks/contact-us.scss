@@ -1,0 +1,13 @@
+.contact-us {
+  background: linear-gradient(90deg, $sapphire 50%, $color-default-white 50%, $color-default-white 100%);
+}
+
+.contact-us__container h2,
+.contact-us__main-header {
+  @extend.visually-hidden;
+}
+
+.contact-us__container  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
