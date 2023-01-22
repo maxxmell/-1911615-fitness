@@ -24,14 +24,17 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 .crossfit__property {
   margin: 0;
   width: 92px;
+  word-wrap: break-word;
 }
 
 .crossfit__property-term {
+  max-width: 92px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -59,11 +62,13 @@
   font-size: 14px;
   line-height: 21px;
   grid-column: 2;
+  max-width: 42px;
 }
 
 .crossfit__date {
   padding-right: 7px;
   grid-row: span 2;
+  max-width: 42px;
 }
 
 .crossfit__month {
