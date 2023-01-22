@@ -28,6 +28,21 @@
   }
 }
 
+.main-header__logo-link img {
+  width: 122px;
+  height: 44px;
+
+  @include vp-1023 {
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    height: 24px;
+  }
+}
+
 .main-header__contacts-link {
   grid-column: 2;
   justify-self: flex-end;
