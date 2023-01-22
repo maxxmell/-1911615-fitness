@@ -46,12 +46,12 @@
   font-size: 40px;
   line-height: 60px;
   border-top: 1px solid $color-default-white;
+}
 
-  &--year {
-    display: grid;
-    justify-content: flex-start;
-    max-width: fit-content;
-  }
+.crossfit__property-details--year {
+  display: grid;
+  justify-content: flex-start;
+  max-width: fit-content;
 }
 
 .crossfit__month,
