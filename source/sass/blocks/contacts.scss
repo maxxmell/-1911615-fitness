@@ -1,18 +1,17 @@
 .contacts {
   box-sizing: border-box;
-  padding: 56px 0 56px 120px;
+  padding: 58px 0 56px 120px;
   min-height: 337px;
 }
 
 .contacts h3,
 .contacts__header {
   margin: 0;
-  padding-bottom: 37px;
+  padding-bottom: 39px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 65px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: $sapphire;
 }
@@ -20,11 +19,12 @@
 .contacts__list {
   position: relative;
   margin: 0;
+  margin-left: 4px;
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 170px 1fr;
-  row-gap: 30px;
+  row-gap: 23px;
   column-gap: 120px;
 
   &::before {
@@ -35,13 +35,13 @@
     right: 0;
     width: 1px;
     height: 100%;
-    background-color: $sapphire;
+    background-color: $light-slate-grey;
   }
 }
 
 .contacts__item {
   width: fit-content;
-  max-width: 170px;
+  max-width: 175px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -60,7 +60,7 @@
 }
 
 .contacts__property-term {
-  padding-bottom: 15px;
+  padding-bottom: 9px;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;

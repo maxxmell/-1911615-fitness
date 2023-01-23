@@ -1,5 +1,16 @@
 .contact-us {
+  position: relative;
   background: linear-gradient(90deg, $sapphire 50%, $color-default-white 50%, $color-default-white 100%);
+
+  &::before {
+    content: "";
+    background-color: $light-slate-grey;
+    width: 50vw;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 50vw;
+  }
 }
 
 .contact-us__container h2,
