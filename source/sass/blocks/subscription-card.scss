@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   aspect-ratio: 360/448;
-  padding: 68px 35px;
+  padding: 55px 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,15 +17,18 @@
 
 .subscription__order-link {
   width: 206px;
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
 
 .subscription-card h4,
 .subscription-card__header {
   margin: 0;
+  padding-bottom: 3px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 40px;
+  line-height: 28px;
   color: $sapphire;
   text-transform: capitalize;
 }
@@ -42,8 +45,8 @@
 
 .subscription-card__price-container {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 59px;
+  padding-top: 52px;
+  padding-bottom: 35px;
   z-index: 1;
   width: 100%;
   display: flex;
@@ -75,7 +78,7 @@
   position: absolute;
   width: 100%;
   z-index: -1;
-  top: 0;
+  top: 30px;
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;

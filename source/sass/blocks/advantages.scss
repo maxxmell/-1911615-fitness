@@ -101,6 +101,7 @@
 
 .advantages__item--important h3,
 .advantages__item--important .advantages__item-header {
+  max-width: 240px;
   padding-bottom: 50px;
   background: none;
   color: $color-default-white;

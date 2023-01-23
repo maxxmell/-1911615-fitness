@@ -6,6 +6,7 @@
 .tabs__btn_active {
   border-bottom: 2px solid $crimson;
   cursor: default;
+  color: $sapphire;
 }
 
 .tabs__btn:not(.tabs__btn_active) {

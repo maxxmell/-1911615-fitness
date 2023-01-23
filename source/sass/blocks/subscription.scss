@@ -2,7 +2,7 @@
   position: relative;
   background-color: $ghost-white;
   padding-top: 120px;
-  padding-bottom: 100px;
+  padding-bottom: 99px;
 
   &::before {
     content: "";
@@ -23,7 +23,8 @@
 .subscription h2,
 .subscription__main-header {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
+  padding-right: 5px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
@@ -35,10 +36,14 @@
 
 .subscription__tab-button {
   box-sizing: border-box;
-  padding: 5px 0 20px;
+  padding: 5px 0 11px;
   text-align: center;
   background-color: transparent;
-  color: $sapphire;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
   margin-bottom: -2px;
 }
 
@@ -46,7 +51,7 @@
   margin: 0 auto 19px;
   display: flex;
   justify-content: center;
-  gap: 46px;
+  gap: 43px;
   width: fit-content;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
