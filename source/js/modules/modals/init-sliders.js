@@ -39,4 +39,3 @@ export function initCarousel(target) {
 
   window.swiperSlider = swiperSlider;
 }
-
