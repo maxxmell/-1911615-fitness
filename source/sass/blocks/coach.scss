@@ -8,7 +8,7 @@
 .coach__text-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 58px 20px 20px;
+  padding: 55px 20px 23px;
   position: absolute;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  line-height: 21px;
+  line-height: 17px;
   color: $color-default-white;
   text-align: center;
   justify-content: flex-end;
@@ -38,19 +38,19 @@
 .coach__text-wrapper h3,
 .coach__name-header {
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 20px;
 }
 
 .coach__text-wrapper p,
 .coach__type {
   display: none;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 18px;
   color: $spindle;
 }
 
@@ -65,12 +65,14 @@
   position: relative;
   padding: 0;
   padding-left: 16px;
+  font-size: 14px;
+  line-height: 21px;
   text-align: start;
 
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 8px;
     left: 0;
     height: 6px;
     width: 6px;
@@ -80,5 +82,5 @@
 }
 
 .coach__skills-item + .coach__skills-item {
-  margin-top: 20px;
+  margin-top: 13px;
 }

@@ -1,17 +1,24 @@
 .coaches__container {
   position: relative;
-  padding-top: 6px;
+  padding-top: 8px;
   padding-bottom: 91px;
+}
+
+.coaches__slider-container {
+  padding-top: 26px;
 }
 
 .coaches__container h2,
 .coaches__main-header {
-  padding-right: 2px;
+  margin: 0;
+  padding-left: 2px;
+  padding-bottom: 20px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 65px;
   color: $sapphire;
+  letter-spacing: 0.03em;
 }
 
 .coaches__list {
@@ -31,11 +38,11 @@
 }
 
 .coaches__slider-button--prev {
-  left: 40px;
+  left: 46px;
 }
 
 .coaches__slider-button--next {
   rotate: 180deg;
-  right: 40px;
+  right: 46px;
 }
 
