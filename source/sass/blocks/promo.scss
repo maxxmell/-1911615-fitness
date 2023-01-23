@@ -1,12 +1,12 @@
 .promo__container {
-  padding-top: 149px;
+  padding-top: 152px;
   padding-bottom: 17px;
 }
 
 .promo__container h2,
 .promo__main-header {
   margin: 0;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
@@ -30,7 +30,7 @@
   min-height: 211px;
   display: flex;
   flex-direction: column;
-  padding: 35px;
+  padding: 24px 28px 29px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -44,7 +44,7 @@
 .promo__item h3,
 .promo__item-header {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
   font-weight: 700;
   font-size: 26px;
   line-height: 26px;
@@ -63,6 +63,8 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: $resolution-blue;
 
   border-bottom: 1px solid $resolution-blue;
@@ -83,13 +85,13 @@
   border: none;
   background-color: $torch-red;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 25px;
 }
 
 .promo__text-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 45px;
+  padding: 43px 45px 44px;
   background-color: $torch-red;
   color: $color-default-white;
 }
@@ -98,12 +100,13 @@
 .promo__item--special .promo__item-header {
   display: flex;
   flex-direction: column;
-  padding-bottom: 35px;
+  font-size: 28px;
+  padding-bottom: 21px;
 }
 
 .promo__item--special span,
 .promo__item-header-detail {
-  padding-top: 10px;
+  padding-top: 2px;
   font-size: 70px;
   line-height: 70px;
 }
