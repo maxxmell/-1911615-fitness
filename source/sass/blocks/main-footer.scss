@@ -6,8 +6,8 @@
 
 .main-footer__container {
   display: grid;
-  padding-top: 41px;
-  padding-bottom: 32px;
+  min-height: 108px;
+  padding-top: 10px;
   grid-template-columns: 88px 1fr minmax(100px, max-content);
   gap: 40px;
 
@@ -48,5 +48,4 @@
 
 .main-footer__navigation {
   justify-self: center;
-  margin: 0;
 }

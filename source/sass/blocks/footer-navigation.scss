@@ -1,16 +1,17 @@
 .footer-navigation {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
   flex-wrap: wrap;
-  gap: 33px;
-  margin: auto 0;
+  gap: 40px;
+  margin-left: 12px;
   padding: 0;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
+  padding-top: 12px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
   list-style: none;
 
   @include vp-1023 {
@@ -29,10 +30,10 @@
   align-items: center;
   margin: 0;
   text-decoration: none;
-  color: white;
+  color: $color-default-white;
   min-height: 38px;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 16px;
 
   @include vp-1023 {
     min-height: 20px;
