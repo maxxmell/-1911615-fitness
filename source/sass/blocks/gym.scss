@@ -4,6 +4,11 @@
   display: grid;
   grid-template-columns: 437px 660px;
   column-gap: 63px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 .gym__content-container {
@@ -26,6 +31,17 @@
   line-height: 58px;
   letter-spacing: 0.03em;
   color: $sapphire;
+
+  @include vp-1199 {
+    text-align: center;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .gym__text-wrapper h3 {
@@ -36,6 +52,10 @@
   font-size: 18px;
   line-height: 27px;
   color: $sapphire;
+
+  @include vp-1199 {
+    text-align: center;
+  }
 }
 
 .gym__text-wrapper p {
@@ -46,10 +66,56 @@
   font-size: 16px;
   line-height: 24px;
   color: $sapphire;
+
+  @include vp-1199 {
+    display: none;
+    padding-left: 88px;
+    padding-right: 88px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.gym__text-wrapper p:first-of-type {
+  @include vp-1199 {
+    display: block;
+  }
+}
+
+.gym__photo-wrapper img {
+  @include vp-1199 {
+    width: 100%;
+    height: 100%;
+    min-width: 678px;
+    min-height: 345px;
+  }
+
+  @include vp-767 {
+    min-width: 320px;
+    min-height: 313px;
+  }
 }
 
 .gym__photo-wrapper {
   margin: 0;
+
+  @include vp-1199 {
+    width: 100%;
+    aspect-ratio: 678/345;
+  }
+
+  @include vp-767 {
+    width: 100vw;
+    min-width: 320px;
+    min-height: 313px;
+    aspect-ratio: 320/313;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 .gym__video-wrapper {
@@ -57,18 +123,23 @@
   bottom: 0;
   left: -63px;
   width: 364px;
+  min-width: 320px;
   height: 228px;
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 320/167;
   background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-desktop.jpg") center/cover no-repeat;
 
   @include retina {
     background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-desktop@2x.jpg") center/cover no-repeat;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-tablet.jpg") center/cover no-repeat;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 
     @include retina {
       background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-tablet@2x.jpg") center/cover no-repeat;
@@ -77,6 +148,11 @@
 
   @include vp-767 {
     background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-mobile.jpg") center/cover no-repeat;
+    position: static;
+    margin: 0 -15px;
+    width: 100vw;
+    height: auto;
+
 
     @include retina {
       background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-mobile@2x.jpg") center/cover no-repeat;
