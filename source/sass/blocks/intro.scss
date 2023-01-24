@@ -5,7 +5,7 @@
   padding-right: 200px;
 
   @include vp-1199 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 52% 48%;
     column-gap: 30px;
     padding-right: 0;
   }
@@ -125,6 +125,7 @@
     font-size: 72px;
     line-height: 86px;
     width: auto;
+    word-break: break-all;
   }
 
   @include vp-767 {
