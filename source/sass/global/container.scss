@@ -27,6 +27,6 @@
   }
 
   @include vp-374 {
-    width: 320px;
+    min-width: 320px;
   }
 }
