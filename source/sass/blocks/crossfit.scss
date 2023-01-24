@@ -5,6 +5,8 @@
   grid-template-columns: 500px 660px;
 
   @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
     grid-template-columns: 43.06% 56.94%;
   }
 
@@ -49,7 +51,7 @@
 
   @include vp-1199 {
     min-height: 292px;
-    padding: 51px 45px 50px;
+    padding: 49px 45px 50px;
   }
 
   @include vp-767 {
@@ -71,6 +73,7 @@
   word-wrap: break-word;
 
   @include vp-1199 {
+    padding-top: 2px;
     width: 117px;
     font-size: 48px;
     line-height: 46px;
@@ -85,6 +88,7 @@
 
   @include vp-1199 {
     width: 56px;
+    margin: 0;
   }
 }
 
@@ -100,7 +104,7 @@
     font-size: 12px;
     line-height: 14px;
     max-width: 56px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
   }
 }
 
@@ -115,7 +119,7 @@
 
   @include vp-1199 {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 31px;
   }
 }
 
@@ -123,7 +127,7 @@
   padding-top: 21px;
 
   @include vp-1199 {
-    padding-top: 13px;
+    padding-top: 4px;
   }
 }
 
@@ -144,7 +148,7 @@
 
   @include vp-1199 {
     font-size: 10px;
-    line-height: 10px;
+    line-height: 4px;
   }
 }
 
@@ -152,10 +156,18 @@
   padding-right: 7px;
   grid-row: span 2;
   max-width: 42px;
+
+  @include vp-1199 {
+    padding-right: 4px;
+  }
 }
 
 .crossfit__month {
   padding-top: 8px;
+
+  @include vp-1199 {
+    padding-top: 7px;
+  }
 }
 
 .crossfit__text-wrapper p,
@@ -171,8 +183,8 @@
   @include vp-1199 {
     font-size: 12px;
     line-height: 18px;
-    padding-top: 5px;
-    padding-bottom: 26px;
+    padding-top: 2px;
+    padding-bottom: 30px;
   }
 }
 
@@ -183,7 +195,11 @@
   padding-bottom: 23px;
 
   @include vp-1199 {
-    padding-top: 16px;
-    padding-bottom: 13px;
+    border-width: 2px;
+    font-size: 10px;
+    line-height: 12px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    padding-left: 29px;
   }
 }

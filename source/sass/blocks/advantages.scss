@@ -5,6 +5,11 @@
 .advantages__container {
   padding-top: 146px;
   padding-bottom: 87px;
+
+  @include vp-1199 {
+    padding-top: 92px;
+    padding-bottom: 94px;
+  }
 }
 
 .advantages__container h2,
@@ -23,6 +28,9 @@
   @include vp-1199 {
     font-size: 42px;
     line-height: 50px;
+    padding-left: 0;
+    padding-right: 23px;
+    padding-bottom: 49px;
   }
 
   @include vp-767 {
@@ -42,7 +50,8 @@
 
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    row-gap: 44px;
+    column-gap: 29px;
     padding: 0;
   }
 
@@ -94,6 +103,7 @@
   word-break: break-all;
 
   @include vp-1199 {
+    margin: 0;
     min-width: 59px;
     max-width: 89px;
     font-size: 58px;
@@ -150,6 +160,7 @@
   padding-bottom: 10px;
 
   @include vp-1199 {
+    padding-bottom: 6px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -171,11 +182,12 @@
   color: $color-default-white;
 
   @include vp-1199 {
+    margin-bottom: 4px;
     width: calc(100% - 236px);
     grid-row: 2;
     justify-self: center;
     grid-column: 1 / span 2;
-    padding: 35px 34px 39px;
+    padding: 33px 34px 39px;
   }
 
   @include vp-767 {
@@ -195,6 +207,11 @@
   color: $color-default-white;
   font-size: 74px;
   line-height: 74px;
+
+  @include vp-1199 {
+    padding-right: 2px;
+    padding-bottom: 18px;
+  }
 }
 
 .advantages__item--important span,
@@ -205,6 +222,12 @@
   color: $color-default-white;
   font-size: 26px;
   line-height: 28px;
+
+  @include vp-1199 {
+    padding-top: 4px;
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .advantages__item--important .advantages__property-term {
@@ -217,6 +240,10 @@
   text-align: center;
   font-weight: 400;
   line-height: 24px;
+
+  @include vp-1199 {
+    width: 174px;
+  }
 }
 
 .advantages__item--underlined {

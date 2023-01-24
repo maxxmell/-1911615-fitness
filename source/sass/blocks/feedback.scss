@@ -1,6 +1,11 @@
 .feedback__container {
   padding-top: 100px;
   padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-top: 73px;
+    padding-bottom: 100px;
+  }
 }
 
 .feedback__slider-wrapper {
@@ -32,6 +37,9 @@
   color: $sapphire;
 
   @include vp-1199 {
+    padding-left: 0;
+    padding-right: 5px;
+    padding-bottom: 40px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -76,6 +84,10 @@
   background-color: $resolution-blue;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   color: $color-default-white;
+
+  @include vp-1199 {
+    padding: 61px 65px 30px;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;

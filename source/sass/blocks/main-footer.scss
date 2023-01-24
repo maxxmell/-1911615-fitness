@@ -11,8 +11,9 @@
   grid-template-columns: 88px 1fr minmax(100px, max-content);
   gap: 40px;
 
-  @include vp-1023 {
-    grid-template-columns: 38px 1fr minmax(114px, max-content);
+  @include vp-1199 {
+    padding-top: 4px;
+    grid-template-columns: 82px 1fr minmax(100px, max-content);
     gap: 25px;
   }
 
@@ -23,7 +24,6 @@
     flex-direction: column;
     padding-top: 40px;
     padding-bottom: 50px;
-    gap: 25px;
   }
 }
 

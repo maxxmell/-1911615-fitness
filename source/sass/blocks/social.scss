@@ -12,6 +12,11 @@
   grid-template-columns: repeat(auto-fit, 25px);
   gap: 11px;
   justify-content: end;
+
+  @include vp-1199 {
+    margin-top: 41px;
+    margin-right: -6px;
+  }
 }
 
 .social__item {

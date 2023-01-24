@@ -12,7 +12,9 @@
   color: $color-default-white;
 
   @include vp-1199 {
-    padding: 70px 88px;
+    padding: 63px 160px 68px 132px;
+    row-gap: 12px;
+    column-gap: 58px;
   }
 
   @include vp-767 {

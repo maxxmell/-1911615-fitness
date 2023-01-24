@@ -1,6 +1,11 @@
 .promo__container {
   padding-top: 152px;
   padding-bottom: 19px;
+
+
+  @include vp-1199 {
+    padding-top: 92px;
+  }
 }
 
 .promo__container h2,
@@ -16,6 +21,8 @@
   color: $sapphire;
 
   @include vp-1199 {
+    padding-right: 9px;
+    padding-bottom: 40px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -33,6 +40,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+
+  @include vp-1199 {
+    gap: 29px;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;
@@ -68,6 +79,13 @@
 .promo__item-description {
   margin: 0;
   padding-bottom: 20px;
+}
+
+.promo__item-description--short {
+  @include vp-1199 {
+    width: 160px;
+    line-height: 22px;
+  }
 }
 
 .promo__link {
@@ -144,6 +162,10 @@
   padding: 43px 45px 44px;
   background-color: $torch-red;
   color: $color-default-white;
+
+  @include vp-1199 {
+    padding: 43px 43px 46px 45px;
+  }
 }
 
 .promo__item--special h3,

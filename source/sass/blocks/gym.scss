@@ -6,6 +6,8 @@
   column-gap: 63px;
 
   @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -14,12 +16,20 @@
 .gym__content-container {
   position: relative;
   padding-bottom: 115px;
+
+  @include vp-1199 {
+    padding-bottom: 83px;
+  }
 }
 
 .gym__text-wrapper {
   padding-top: 39px;
   padding-left: 61px;
   padding-right: 22px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .gym__text-wrapper h2 {
@@ -33,6 +43,8 @@
   color: $sapphire;
 
   @include vp-1199 {
+    padding-right: 16px;
+    padding-bottom: 0;
     text-align: center;
     font-size: 42px;
     line-height: 50px;
@@ -55,6 +67,7 @@
 
   @include vp-1199 {
     text-align: center;
+    padding-bottom: 34px;
   }
 }
 
@@ -68,6 +81,7 @@
   color: $sapphire;
 
   @include vp-1199 {
+    padding-bottom: 43px;
     display: none;
     padding-left: 88px;
     padding-right: 88px;
@@ -123,7 +137,6 @@
   bottom: 0;
   left: -63px;
   width: 364px;
-  min-width: 320px;
   height: 228px;
   display: flex;
   align-items: center;
@@ -136,6 +149,9 @@
   }
 
   @include vp-1199 {
+    aspect-ratio: 266/167;
+    width: 266px;
+    height: 167px;
     background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-tablet.jpg") center/cover no-repeat;
     left: 0;
     right: 0;
