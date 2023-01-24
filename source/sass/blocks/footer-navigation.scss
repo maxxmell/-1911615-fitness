@@ -19,9 +19,9 @@
   }
 
   @include vp-767 {
-    gap: 12px;
-    justify-content: flex-start;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 }
 
