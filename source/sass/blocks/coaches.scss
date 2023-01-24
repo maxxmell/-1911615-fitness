@@ -6,6 +6,14 @@
 
 .coaches__slider-container {
   padding-top: 26px;
+
+  @include vp-1199 {
+    margin: 0 56px;
+  }
+
+  @include vp-1199 {
+    margin: 0 32px;
+  }
 }
 
 .coaches__container h2,
@@ -19,6 +27,16 @@
   line-height: 65px;
   color: $sapphire;
   letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .coaches__list {
@@ -35,13 +53,37 @@
   width: 16px;
   background-image: url("../img/svg/icon-slider-tick-left.svg");
   background-size: cover;
+
+  @include vp-1199 {
+    top: 248px;
+  }
+
+  @include vp-767 {
+    top: 245px;
+  }
 }
 
 .coaches__slider-button--prev {
   left: 46px;
+
+  @include vp-1199 {
+    left: 40px;
+  }
+
+  @include vp-767 {
+    left: 20px;
+  }
 }
 
 .coaches__slider-button--next {
   rotate: 180deg;
   right: 46px;
+
+  @include vp-1199 {
+    right: 40px;
+  }
+
+  @include vp-767 {
+    right: 20px;
+  }
 }
