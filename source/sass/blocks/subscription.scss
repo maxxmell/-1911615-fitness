@@ -12,6 +12,10 @@
     height: 494px;
     width: 287px;
     background: url("../img/background/barbells.png");
+
+    @include vp-767 {
+      content: none;
+    }
   }
 }
 
@@ -32,6 +36,16 @@
   letter-spacing: 0.03em;
   color: $sapphire;
   text-align: center;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .subscription__tab-button {
@@ -45,6 +59,16 @@
   line-height: 30px;
   color: rgba(16, 38, 84, 0.5);
   margin-bottom: -2px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .subscription__nav {
@@ -54,6 +78,14 @@
   gap: 43px;
   width: fit-content;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  @include vp-1199 {
+    gap: 51px;
+  }
+
+  @include vp-767 {
+    gap: 42px;
+  }
 }
 
 .subscription__content {
@@ -71,4 +103,16 @@
   grid-template-columns: repeat(3, 360px);
   gap: 40px;
   list-style: none;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    width: 442px;
+    grid-template-columns: 1fr;
+  }
+
+  @include vp-767 {
+    gap: 35px;
+    max-width: 442px;
+    width: 100%;
+  }
 }
