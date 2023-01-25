@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import initTabs from './modules/tabs';
 import {initCarousel, initSlider} from './modules/modals/init-sliders';
+import {removeNoscript} from './modules/noscript';
 
 // ---------------------------------
 
@@ -20,8 +21,11 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initTabs('.tabs');
+    removeNoscript('tabs');
     initSlider('.coaches-swiper');
+    removeNoscript('coaches__list');
     initCarousel('.feedback-swiper');
+    removeNoscript('feedback__list');
   });
 });
 

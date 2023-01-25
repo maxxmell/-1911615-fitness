@@ -22,3 +22,11 @@
 .tabs__pane_show {
   display: block;
 }
+
+.tabs--noscript .tabs__pane {
+  display: block;
+}
+
+.tabs--noscript .tabs__header {
+  display: block;
+}

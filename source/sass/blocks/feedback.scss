@@ -133,9 +133,13 @@
     line-height: 26px;
     padding-left: 102px;
     padding-bottom: 0;
-    margin-bottom: 23px;
+    margin-bottom: 40px;
     max-height: 70px;
     overflow-y: auto;
+  }
+
+  @include vp-345 {
+    margin-bottom: 23px;
   }
 }
 
@@ -193,4 +197,9 @@
 .feedback__slider-button--next {
   rotate: 180deg;
   right: 0;
+}
+
+.feedback__list--noscript {
+  flex-wrap: wrap;
+  gap: 30px;
 }
