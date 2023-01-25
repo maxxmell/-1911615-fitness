@@ -28,7 +28,8 @@
     grid-template-areas: ". promo"
       "service coaches"
       "subscription schedule";
-    gap: 30px;
+    row-gap: 21px;
+    column-gap: 70px;
   }
 }
 

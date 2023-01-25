@@ -38,6 +38,7 @@
 
 .contact-us__free-try {
   @include vp-1199 {
+    min-width: 320px;
     width: 100vw;
     margin: 0 -45px;
     min-height: 324px;

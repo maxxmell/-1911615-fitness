@@ -1,5 +1,4 @@
 .main-footer {
-  min-height: 138px;
   min-width: 320px;
   background-color: $black-russian;
 }
@@ -22,8 +21,9 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 48px;
+    padding-bottom: 52px;
+    gap: 36px;
   }
 }
 
@@ -33,6 +33,7 @@
 
   @include vp-767 {
     position: absolute;
+    margin-top: 2px;
   }
 }
 

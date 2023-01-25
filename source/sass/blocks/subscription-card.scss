@@ -26,6 +26,7 @@
   @include vp-767 {
     min-width: 290px;
     aspect-ratio: 290/384;
+    padding: 44px 35px;
   }
 }
 
@@ -33,6 +34,11 @@
   width: 206px;
   padding-top: 23px;
   padding-bottom: 23px;
+
+  @include vp-767 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .subscription-card h4,
@@ -48,6 +54,7 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 24px;
+    padding-bottom: 1px;
   }
 }
 
@@ -69,6 +76,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @include vp-767 {
+    padding-top: 41px;
+    padding-bottom: 30px;
+  }
 }
 
 .subscription-card__price {
@@ -87,14 +99,13 @@
   word-break: break-word;
 
   @include vp-767 {
-    font-size: 80px;
-    line-height: 120px;
+    background-size: 24px 33px;
+    background-position: bottom 19px right 0;
+    font-size: 48px;
+    line-height: 72px;
+    padding-right: 34px;
+    padding-left: 4px;
   }
-}
-
-.subscription-card__rouble-img {
-  display: block;
-  float: right;
 }
 
 .subscription-card__price-shadow {
@@ -114,6 +125,7 @@
   word-break: break-word;
 
   @include vp-767 {
+    top: -3px;
     font-size: 80px;
     line-height: 120px;
   }

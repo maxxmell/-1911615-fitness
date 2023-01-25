@@ -36,7 +36,7 @@
 
   @include vp-767 {
     min-width: 226px;
-    min-height: 294px;
+    min-height: 274px;
   }
 }
 
@@ -68,6 +68,11 @@
   }
 }
 
+.coach__text-wrapper:active {
+  background-color: rgba(16, 38, 84, 0.89);
+  justify-content: flex-start;
+}
+
 .coach__text-wrapper:hover:not(.focus-visible) .coach__text-wrapper p,
 .coach__text-wrapper:hover:not(.focus-visible) .coach__type,
 .coach__text-wrapper:hover:not(.focus-visible) .coach__skills-list {
@@ -91,6 +96,10 @@
   font-size: 16px;
   line-height: 18px;
   color: $spindle;
+
+  @include vp-767 {
+    padding-bottom: 36px;
+  }
 }
 
 .coach__skills-list {
@@ -98,6 +107,10 @@
   padding-left: 35px;
   display: none;
   list-style: none;
+
+  @include vp-767 {
+    padding-left: 14px;
+  }
 }
 
 .coach__skills-item {

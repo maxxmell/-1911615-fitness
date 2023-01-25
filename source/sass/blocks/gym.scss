@@ -11,6 +11,12 @@
     grid-template-columns: 1fr;
     justify-items: center;
   }
+
+  @include vp-767 {
+    padding-top: 64px;
+    padding-bottom: 25px;
+    justify-items: flex-start;
+  }
 }
 
 .gym__content-container {
@@ -19,6 +25,10 @@
 
   @include vp-1199 {
     padding-bottom: 83px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 45px;
   }
 }
 
@@ -51,6 +61,8 @@
   }
 
   @include vp-767 {
+    padding-bottom: 5px;
+    text-align: start;
     font-size: 32px;
     line-height: 38px;
   }
@@ -68,6 +80,11 @@
   @include vp-1199 {
     text-align: center;
     padding-bottom: 34px;
+  }
+
+  @include vp-767 {
+    text-align: start;
+    padding-bottom: 24px;
   }
 }
 
@@ -89,8 +106,10 @@
   }
 
   @include vp-767 {
+    text-align: left;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 20px;
+    padding-bottom: 33px;
   }
 }
 
@@ -111,6 +130,7 @@
   @include vp-767 {
     min-width: 320px;
     min-height: 313px;
+    margin-bottom: 40px;
   }
 }
 
@@ -166,7 +186,9 @@
     background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-mobile.jpg") center/cover no-repeat;
     position: static;
     margin: 0 -15px;
+    aspect-ratio: 320/167;
     width: 100vw;
+    min-width: 320px;
     height: auto;
 
 
@@ -180,4 +202,9 @@
   height: 100px;
   width: 100px;
   background: url("../img/svg/button-play.svg") center/cover no-repeat;
+
+  @include vp-1199 {
+    height: 73px;
+    width: 73px;
+  }
 }

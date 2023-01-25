@@ -17,6 +17,11 @@
     margin-top: 41px;
     margin-right: -6px;
   }
+
+  @include vp-1199 {
+    margin: 0;
+    justify-content: flex-start;
+  }
 }
 
 .social__item {
