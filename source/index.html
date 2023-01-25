@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Фитнес">
-    <title>ProjectName</title>
+    <title>SUPERGYM</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/alumni-sans-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/alumni-sans-extra-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/alumni-sans-semi-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="icon.webmanifest">
   </head>
   <body>
     <div class="wrapper">
@@ -72,12 +82,12 @@
           <div class="subscription__container container tabs tabs--noscript">
             <h2 class="subscription__main-header">Абонементы</h2>
             <div class="subscription__nav tabs__nav">
-              <button class="subscription__tab-button tabs__btn tabs__btn_active">1 месяц</button>
-              <button class="subscription__tab-button tabs__btn">6 месяцев</button>
-              <button class="subscription__tab-button tabs__btn">12 месяцев</button>
+              <button class="subscription__tab-button tabs__btn tabs__btn--active" data-tabs-path="id-1">1 месяц</button>
+              <button class="subscription__tab-button tabs__btn" data-tabs-path="id-2">6 месяцев</button>
+              <button class="subscription__tab-button tabs__btn" data-tabs-path="id-3">12 месяцев</button>
             </div>
             <div class="subscription__content tabs__content">
-              <div class="tabs__pane tabs__pane_show">
+              <div class="tabs__pane tabs__pane--show" data-tabs-target="id-1">
                 <h3 class="subscription__header tabs__header">1 месяц</h3>
                 <ul class="subscription__list">
                   <li class="subscription__item subscription-card">
@@ -109,7 +119,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="tabs__pane">
+              <div class="tabs__pane" data-tabs-target="id-2">
                 <h3 class="subscription__header tabs__header">6 месяцев</h3>
                 <ul class="subscription__list">
                   <li class="subscription__item subscription-card">
@@ -141,7 +151,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="tabs__pane">
+              <div class="tabs__pane" data-tabs-target="id-3">
                 <h3 class="subscription__header tabs__header">12 месяцев</h3>
                 <ul class="subscription__list">
                   <li class="subscription__item subscription-card">

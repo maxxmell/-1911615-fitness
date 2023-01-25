@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import initTabs from './modules/tabs';
 import {initCarousel, initSlider} from './modules/modals/init-sliders';
 import {removeNoscript} from './modules/noscript';
+import renderTabs from './modules/tabs';
 
 // ---------------------------------
 
@@ -20,7 +20,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    initTabs('.tabs');
+    renderTabs({
+      container: 'tabs',
+      button: 'tabs__btn',
+      content: 'tabs__pane',
+    });
     removeNoscript('tabs');
     initSlider('.coaches-swiper');
     removeNoscript('coaches__list');
