@@ -3493,11 +3493,14 @@ button,
 
   .crossfit__photo-wrapper {
     aspect-ratio: 290/292;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .crossfit__photo-wrapper img {
     min-width: 290px;
     min-height: 292px;
+    height: auto;
   }
 
   .crossfit__text-wrapper {
