@@ -23,8 +23,15 @@
     width: 287px;
     background: url("../img/background/barbells-desktop.png") center/cover no-repeat;
 
-    @include retina {
+    @media (min-resolution: 2dppx)and (min-width: 1200) {
       background: url("../img/background/barbells-desktop@2x.png") center/cover no-repeat;
+    }
+
+    @media (min-resolution: 2dppx) and (max-width: 1199) {
+      bottom: -125px;
+      height: 444px;
+      width: 347px;
+      background: url("../img/background/barbells-tablet@2x.png") center/cover no-repeat;
     }
 
     @include vp-1199 {
@@ -32,10 +39,6 @@
       height: 444px;
       width: 347px;
       background: url("../img/background/barbells-tablet.png") center/cover no-repeat;
-
-      @include retina {
-        background: url("../img/background/barbells-tablet@2x.png") center/cover no-repeat;
-      }
     }
 
     @include vp-767 {

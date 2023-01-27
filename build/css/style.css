@@ -2679,6 +2679,12 @@ button,
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1200), (min-resolution: 2dppx) and (min-width: 1200) {
+  .subscription::before {
+    background: url("../img/background/barbells-desktop@2x.png") center/cover no-repeat;
+  }
+}
+
 @media (max-width: 1365px) {
   .container {
     padding-left: calc(50vw - 580px);
@@ -3302,8 +3308,13 @@ button,
     background: -o-linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-tablet@2x.jpg") center/cover no-repeat;
     background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-tablet@2x.jpg") center/cover no-repeat;
   }
+}
 
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1199), (-o-min-device-pixel-ratio: 2/1) and (max-width: 1199), (min-resolution: 2dppx) and (max-width: 1199) {
   .subscription::before {
+    bottom: -125px;
+    height: 444px;
+    width: 347px;
     background: url("../img/background/barbells-tablet@2x.png") center/cover no-repeat;
   }
 }
@@ -4020,9 +4031,5 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 54, 122, 0.5))), url("../img/background/gym-video-desktop@2x.jpg") center/cover no-repeat;
     background: -o-linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-desktop@2x.jpg") center/cover no-repeat;
     background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-desktop@2x.jpg") center/cover no-repeat;
-  }
-
-  .subscription::before {
-    background: url("../img/background/barbells-desktop@2x.png") center/cover no-repeat;
   }
 }
