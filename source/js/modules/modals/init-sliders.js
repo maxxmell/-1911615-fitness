@@ -10,12 +10,8 @@ export function initSlider(target) {
       prevEl: `${target}-button-prev`,
     },
     breakpoints: {
-      640: {
+      768: {
         slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      1066: {
-        slidesPerView: 3,
         spaceBetween: 30,
       },
       1200: {

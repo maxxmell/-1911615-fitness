@@ -12,6 +12,7 @@
 
   @include vp-767 {
     aspect-ratio: 226/274;
+    max-width: 500px;
   }
 }
 
@@ -68,14 +69,18 @@
   }
 }
 
-.coach__text-wrapper:active {
+.coach__text-wrapper:active,
+.coach__text-wrapper:focus {
   background-color: rgba(16, 38, 84, 0.89);
   justify-content: flex-start;
 }
 
 .coach__text-wrapper:hover:not(.focus-visible) .coach__text-wrapper p,
 .coach__text-wrapper:hover:not(.focus-visible) .coach__type,
-.coach__text-wrapper:hover:not(.focus-visible) .coach__skills-list {
+.coach__text-wrapper:hover:not(.focus-visible) .coach__skills-list,
+.coach__text-wrapper:focus .coach__text-wrapper p,
+.coach__text-wrapper:focus .coach__type,
+.coach__text-wrapper:focus .coach__skills-list {
   display: block;
 }
 

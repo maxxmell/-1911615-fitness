@@ -1618,7 +1618,8 @@ button,
   justify-content: flex-end;
 }
 
-.coach__text-wrapper:active {
+.coach__text-wrapper:active,
+.coach__text-wrapper:focus {
   background-color: rgba(16, 38, 84, 0.89);
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -1627,7 +1628,10 @@ button,
 
 .coach__text-wrapper:hover:not(.focus-visible) .coach__text-wrapper p,
 .coach__text-wrapper:hover:not(.focus-visible) .coach__type,
-.coach__text-wrapper:hover:not(.focus-visible) .coach__skills-list {
+.coach__text-wrapper:hover:not(.focus-visible) .coach__skills-list,
+.coach__text-wrapper:focus .coach__text-wrapper p,
+.coach__text-wrapper:focus .coach__type,
+.coach__text-wrapper:focus .coach__skills-list {
   display: block;
 }
 
@@ -3543,7 +3547,8 @@ button,
 
   .coaches__slider-container {
     padding-top: 23px;
-    margin: 0 32px;
+    margin: 0 auto;
+    max-width: 500px;
   }
 
   .coaches__container h2,
@@ -3569,6 +3574,7 @@ button,
 
   .coach {
     aspect-ratio: 226/274;
+    max-width: 500px;
   }
 
   .coach__photo-wrapper {
@@ -3956,6 +3962,12 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 54, 122, 0.5))), url("../img/background/gym-video-mobile@2x.jpg") center/cover no-repeat;
     background: -o-linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-mobile@2x.jpg") center/cover no-repeat;
     background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-mobile@2x.jpg") center/cover no-repeat;
+  }
+}
+
+@media (max-width: 594px) {
+  .coaches__slider-container {
+    margin: 0 32px;
   }
 }
 
