@@ -21,13 +21,15 @@
 
 .gym__content-container {
   position: relative;
-  padding-bottom: 115px;
+  padding-bottom: 0;
+  margin-bottom: -112px;
 
   @include vp-1199 {
-    padding-bottom: 83px;
+    margin-bottom: -84px;
   }
 
   @include vp-767 {
+    margin-bottom: 0;
     padding-bottom: 45px;
   }
 }
@@ -153,8 +155,8 @@
 }
 
 .gym__video-wrapper {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 113px;
   left: -63px;
   width: 364px;
   height: 228px;
@@ -170,6 +172,7 @@
 
   @include vp-1199 {
     aspect-ratio: 266/167;
+    bottom: 84px;
     width: 266px;
     height: 167px;
     background: linear-gradient(rgba(20, 54, 122, 0.5)), url("../img/background/gym-video-tablet.jpg") center/cover no-repeat;
