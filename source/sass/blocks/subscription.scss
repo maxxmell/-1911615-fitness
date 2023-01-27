@@ -104,6 +104,7 @@
 .subscription__nav {
   margin: 0 auto 19px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 43px;
   width: fit-content;
