@@ -1553,6 +1553,7 @@ button,
 }
 
 .coaches__slider-button {
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   top: 250px;
@@ -2094,6 +2095,7 @@ button,
 }
 
 .feedback__slider-button {
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -2118,6 +2120,10 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.feedback__slider-button--disabled {
+  cursor: default;
 }
 
 .contact-us {

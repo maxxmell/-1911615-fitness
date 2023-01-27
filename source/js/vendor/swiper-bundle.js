@@ -5931,7 +5931,7 @@
           nextEl: null,
           prevEl: null,
           hideOnClick: false,
-          disabledClass: 'swiper-button-disabled',
+          disabledClass: 'feedback__slider-button--disabled',
           hiddenClass: 'swiper-button-hidden',
           lockClass: 'swiper-button-lock',
           navigationDisabledClass: 'swiper-navigation-disabled'

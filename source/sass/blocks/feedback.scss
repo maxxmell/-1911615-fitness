@@ -179,6 +179,7 @@
 }
 
 .feedback__slider-button {
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -202,4 +203,8 @@
 .feedback__list--noscript {
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.feedback__slider-button--disabled {
+  cursor: default;
 }
