@@ -181,6 +181,8 @@
   }
 
   @include vp-767 {
+    object-fit: cover;
+    object-position: 50% 15%;
     min-width: 290px;
     min-height: 299px;
   }
