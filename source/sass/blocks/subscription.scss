@@ -21,20 +21,20 @@
     right: 0;
     height: 494px;
     width: 287px;
-    background: url("../img/background/barbells-desktop.png");
+    background: url("../img/background/barbells-desktop.png") center/cover no-repeat;
 
     @include retina {
-      background: url("../img/background/barbells-desktop@2x.png");
+      background: url("../img/background/barbells-desktop@2x.png") center/cover no-repeat;
     }
 
     @include vp-1199 {
       bottom: -125px;
       height: 444px;
       width: 347px;
-      background: url("../img/background/barbells-tablet.png");
+      background: url("../img/background/barbells-tablet.png") center/cover no-repeat;
 
       @include retina {
-        background: url("../img/background/barbells-tablet@2x.png");
+        background: url("../img/background/barbells-tablet@2x.png") center/cover no-repeat;
       }
     }
 

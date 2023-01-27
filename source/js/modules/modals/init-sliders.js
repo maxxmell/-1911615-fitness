@@ -18,7 +18,11 @@ export function initSlider(target) {
         slidesPerView: 3,
         spaceBetween: 30,
       },
-      1160: {
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1294: {
         slidesPerView: 4,
         spaceBetween: 40,
       },

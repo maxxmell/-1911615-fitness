@@ -16,6 +16,10 @@
 .coaches__slider-container {
   padding-top: 26px;
 
+  @include vp-1294 {
+    margin: 0 15px;
+  }
+
   @include vp-1199 {
     padding-top: 11px;
     margin: 0 56px;
@@ -83,6 +87,10 @@
 .coaches__slider-button--prev {
   left: 46px;
 
+  @include vp-1294 {
+    left: calc((100vw - 1168px) / 2);
+  }
+
   @include vp-1199 {
     left: 44px;
   }
@@ -95,6 +103,10 @@
 .coaches__slider-button--next {
   rotate: 180deg;
   right: 46px;
+
+  @include vp-1294 {
+    right: calc((100vw - 1168px) / 2);
+  }
 
   @include vp-1199 {
     right: 44px;
