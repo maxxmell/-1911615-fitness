@@ -3496,14 +3496,17 @@ button,
 
   .crossfit__photo-wrapper {
     aspect-ratio: 290/292;
-    -o-object-fit: cover;
-    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
   }
 
   .crossfit__photo-wrapper img {
     min-width: 290px;
-    min-height: 292px;
-    height: auto;
+    min-height: 336px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 48% 50%;
+    object-position: 48% 50%;
   }
 
   .crossfit__text-wrapper {
